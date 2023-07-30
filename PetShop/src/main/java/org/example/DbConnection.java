@@ -10,11 +10,10 @@ public class DbConnection {
     private final String url = "jdbc:postgresql://localhost:5432/postgres";
     private final String user = "postgres";
     private final String password = "postgre123";
+    Connection conn;
 
     public Connection connection()
     {
-        Connection conn = null;
-
         try {
             conn = DriverManager.getConnection(url, user, password);
             System.out.println("Connected to the PostgreSQL server successfully.");
