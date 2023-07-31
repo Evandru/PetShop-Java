@@ -13,9 +13,8 @@ public class Pardal extends Ave {
         this.color = color;
     }
 
-    public Pardal(Double wingWidth, Boolean canFly, String color) {
-        super(wingWidth, canFly);
+    public Pardal(Long id, String name, Integer age, Double weight, Double wingWidth, Boolean canFly, String color) {
+        super(id, name, age, weight, wingWidth, canFly);
         this.color = color;
     }
-
 }
