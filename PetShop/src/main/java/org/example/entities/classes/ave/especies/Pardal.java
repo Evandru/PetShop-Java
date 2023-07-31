@@ -17,4 +17,5 @@ public class Pardal extends Ave {
         super(id, name, age, weight, wingWidth, canFly);
         this.color = color;
     }
+
 }
