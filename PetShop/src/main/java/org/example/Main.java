@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.controllers.AvesController;
+import org.example.database.DbConnection;
 import org.example.entities.classes.ave.especies.Pardal;
 
 import java.sql.SQLException;
