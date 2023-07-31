@@ -3,7 +3,7 @@ package org.example.entities.classes.ave;
 import org.example.entities.Animal;
 import org.example.interfaces.Aereo;
 
-public  class Ave extends Animal implements Aereo {
+public abstract class Ave extends Animal implements Aereo {
     private Double wingWidth;
     private Boolean canFly;
 
