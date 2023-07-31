@@ -11,12 +11,11 @@ public class Main {
         DbConnection dbc = new DbConnection();
         try {
             var db = dbc.connection();
+
             AvesController avesC = new AvesController();
             Pardal pardal = avesC.pardalInstantiate();
             System.out.println(pardal);
-            //PreparedStatement ps = db.prepareStatement("");
-            //ResultSet rs = ps.executeQuery();
-            //System.out.println(rs);
+
             db.close();
         }
         catch (SQLException ex) {
