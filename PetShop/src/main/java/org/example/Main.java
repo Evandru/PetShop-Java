@@ -1,10 +1,8 @@
 package org.example;
 
-import org.example.controllers.AnimalController;
+import org.example.controllers.AvesController;
 import org.example.entities.classes.ave.especies.Pardal;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Main {
@@ -12,8 +10,8 @@ public class Main {
         DbConnection dbc = new DbConnection();
         try {
             var db = dbc.connection();
-            AnimalController animalC = new AnimalController();
-            Pardal pardal = animalC.pardalInstantiate();
+            AvesController avesC = new AvesController();
+            Pardal pardal = avesC.pardalInstantiate();
             System.out.println(pardal);
             //PreparedStatement ps = db.prepareStatement("");
             //ResultSet rs = ps.executeQuery();
