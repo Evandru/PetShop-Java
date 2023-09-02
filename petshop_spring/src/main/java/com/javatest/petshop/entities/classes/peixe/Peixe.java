@@ -2,7 +2,11 @@ package com.javatest.petshop.entities.classes.peixe;
 
 import com.javatest.petshop.entities.Animal;
 import com.javatest.petshop.interfaces.Maritimo;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name = "id")
 public abstract class Peixe extends Animal implements Maritimo {
     private Boolean swimFast;
 

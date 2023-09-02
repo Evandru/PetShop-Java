@@ -1,7 +1,11 @@
 package com.javatest.petshop.entities.classes.ave.especies;
 
 import com.javatest.petshop.entities.classes.ave.Ave;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class Pato extends Ave{
     private String beakColor;
 

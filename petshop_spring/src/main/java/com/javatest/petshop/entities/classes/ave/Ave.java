@@ -2,7 +2,11 @@ package com.javatest.petshop.entities.classes.ave;
 
 import com.javatest.petshop.entities.Animal;
 import com.javatest.petshop.interfaces.Aereo;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name = "id")
 public abstract class Ave extends Animal implements Aereo {
     private Double wingWidth;
     private Boolean canFly;

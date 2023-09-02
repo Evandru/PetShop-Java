@@ -1,7 +1,11 @@
 package com.javatest.petshop.entities.classes.mamifero.especies;
 
 import com.javatest.petshop.entities.classes.mamifero.Mamifero;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class Cachorro extends Mamifero {
     private String furColor;
 

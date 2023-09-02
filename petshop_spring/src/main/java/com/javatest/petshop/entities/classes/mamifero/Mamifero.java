@@ -2,7 +2,11 @@ package com.javatest.petshop.entities.classes.mamifero;
 
 import com.javatest.petshop.entities.Animal;
 import com.javatest.petshop.interfaces.Terrestre;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name = "id")
 public abstract class Mamifero extends Animal implements Terrestre {
     private Boolean isBreastfeeding;
 

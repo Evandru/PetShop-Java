@@ -1,7 +1,11 @@
 package com.javatest.petshop.entities.classes.peixe.especies;
 
 import com.javatest.petshop.entities.classes.peixe.Peixe;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class Tubarao extends Peixe {
     private String toothColor;
 
